@@ -1,0 +1,125 @@
+#################娃娃派 配置开始################################
+#spring:
+#  datasource:
+#    username: wawapaidb
+#    password: psd4root@YiDouTEC
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://rm-bp1h558rci0eid8lq.mysql.rds.aliyuncs.com:3306/doll_shop_game_db?&useUnicode=true&characterEncoding=utf8
+##    url: jdbc:mysql://rm-bp1h558rci0eid8lqo.mysql.rds.aliyuncs.com:3306/doll_shop_game_db?&useUnicode=true&characterEncoding=utf8
+#
+#  data:
+#    redis:
+#      repositories:
+#        enabled: true
+#
+#  jpa:
+#    database: mysql
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#
+#  redis:
+##    host: git.yidou360.com
+#    host: r-bp18c5b024d356d4.redis.rds.aliyuncs.com
+#    port: 6379
+#    timeout: 3000
+#    password: reDisPSDaiTeYiDou360TEC
+#    pool:
+#      max-wait: 30
+#      max-active: 80
+#      max-idle: 8
+#      min-idle: 0
+#
+#  cache:
+#    type: redis
+#
+#  profiles:
+#    active: custom-config
+#
+#server:
+#  port: 8080
+
+#################娃娃派 配置结束################################
+
+#################开发环境配置开始################################
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/doll_shop_game?&useUnicode=true&characterEncoding=utf8
+
+  data:
+    redis:
+      repositories:
+        enabled: true
+
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+  redis:
+    host: server.yidou360.com
+    port: 6379
+    timeout: 3000
+    pool:
+      max-wait: 30
+      max-active: 80
+      max-idle: 8
+      min-idle: 0
+    password: redisPSD@YiDouTEC
+
+  cache:
+    type: redis
+
+  profiles:
+    active: custom-config
+#server:
+  #port: 8081
+
+#################开发环境配置结束################################
+
+
+
+
+#################喜乐萌 配置开始################################
+
+#spring:
+#  datasource:
+#    username: xilemeng
+#    password: Xilemeng888
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://rm-wz90j98575886lao9.mysql.rds.aliyuncs.com:3306/doll_shop_game_db?&useUnicode=true&characterEncoding=utf8
+#
+#  data:
+#    redis:
+#      repositories:
+#        enabled: true
+#
+#  jpa:
+#    database: mysql
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#
+#  redis:
+##    password: reDisPSDaiTeYiDou360TEC
+#    host: localhost
+#    port: 6379
+#    timeout: 3000
+#    pool:
+#      max-wait: 300
+#      max-active: 80
+#      max-idle: 8
+#      min-idle: 0
+#
+#  cache:
+#    type: redis
+#
+#  profiles:
+#    active: custom-config
+#server:
+#  port: 8080
+ #################喜乐萌 配置结束################################
